@@ -1,9 +1,10 @@
 require("dotenv").config()
 const { ActivityType } = require("discord.js")
 const fs = require("fs")
-const { Client, Collection } = require("discord.js")
+const { Client, Collection, GatewayIntentBits } = require('discord.js')
+const { channel } = require("diagnostics_channel")
 
-const client = new Client({intents:[]})
+const client = new Client({intents: [GatewayIntentBits.Guilds]})
 
 client.commands = new Collection
 
@@ -44,7 +45,5 @@ client.on("interactionCreate", async (interaction) => {
         }
     }
 })
-
-
 
 client.login(process.env.DISCORD_BOT_TOKEN)
