@@ -6,6 +6,5 @@ module.exports = {
 		.setDescription("nub!"),
 	async execute(interaction) {
 		await interaction.reply("in the Bullbar Staff Team are only nubs");
-
 	}
 }

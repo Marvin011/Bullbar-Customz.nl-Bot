@@ -12,10 +12,12 @@ module.exports = {
         const member = interaction.options.getMember("member");
         const icon = user.displayAvatarURL();
         const tag = user.tag
+          
+        
 
         const userinfo = new EmbedBuilder()
-        .setColor("#00e8fb")
-        .setTitle(`Information about ${member.user.tag}`)
+        .setColor("ffffff")
+        .setTitle(`Information about ${member}`)
         .setThumbnail(member.user.avatarURL({dynamic: true}))
         .addFields([
             {
