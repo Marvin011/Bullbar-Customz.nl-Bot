@@ -18,7 +18,7 @@ commandFiles.forEach((commandFile) => {
 client.once("ready", () => {
     console.log(`Ready! Logged in as ${client.user.tag}! I'm on ${client.guilds.cache.size} guild(s)!`)
     client.user.setActivity({
-        name: "Cooming Soon",
+        name: "Coming Soon",
         type: ActivityType.Streaming,
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     })
