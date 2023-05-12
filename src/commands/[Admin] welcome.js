@@ -1,12 +1,12 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
-const {EmbedBuilder, Embed, PermissionFlagsBits} = require("discord.js");
+const {EmbedBuilder, PermissionFlagsBits} = require("discord.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("welcome")
-    .setDescription("welcome")
+    .setDescription("Member joined the Club")
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles)
-    .addUserOption(option => option.setName("member").setDescription("member").setRequired(true)),
+    .addUserOption(option => option.setName("member").setDescription("The member").setRequired(true)),
     async execute(interaction) {
 
         const user = interaction.options.getUser("user") || interaction.user;
