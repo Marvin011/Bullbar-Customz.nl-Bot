@@ -22,7 +22,7 @@ module.exports = {
                 inline: false
             },
         ])
-        .setImage("https://media.discordapp.net/attachments/1103408403474288741/1103411645549662240/1.jpg?width=1440&height=533")
+        .setImage("https://media.discordapp.net/attachments/1103408403474288741/1106860810220879972/Welcome.jpg?width=1440&height=533")
         .setFooter({text: user.username, iconURL: user.displayAvatarURL()})
         .setTimestamp(interaction.createdAt)
 

@@ -17,7 +17,6 @@ module.exports = {
 
         const userinfo = new EmbedBuilder()
         .setColor("ffffff")
-        .setTitle(`Information about ${member}`)
         .setThumbnail(member.user.avatarURL({dynamic: true}))
         .addFields([
             {
